@@ -2,5 +2,6 @@ cmake_minimum_required(VERSION 3.27)
 project(cpluspluslearing)
 
 set(CMAKE_CXX_STANDARD 23)
+add_compile_options("-pedantic-errors")
 
 add_executable(cpluspluslearing main.cpp)
