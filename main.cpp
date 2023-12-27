@@ -1,11 +1,8 @@
 #include <iostream>
 
+int add(int x, int y); // needed so main.cpp knows that add() is a function defined elsewhere
+
 int main() {
-    std::cout << "Enter an integer: ";
-
-    int num{ };
-    std::cin >> num;
-
-    std::cout << "Double that number is: " <<  num * 2 << '\n';
-    return 0;
+  std::cout << "The sum of 3 and 4 is: " << add(3, 4) << '\n';
+  return 0;
 }
